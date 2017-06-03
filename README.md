@@ -51,3 +51,11 @@ When you run `make`, the `inputs` and `outputs` directories will be mounted insi
 
 If you've followed the first tip ("fork this repo"), then you should be able to commit your datasets directly to version control after stopping the server.
 
+### Use other people's notebooks to get started
+
+- [Learn Python 3 with Jupyter](https://gist.github.com/kenjyco/69eeb503125035f21a9d)
+- [Pandas](https://dev.socrata.com/blog/2016/02/01/pandas-and-jupyter-notebook.html)
+- [More Pandas](https://bitbucket.org/hrojas/learn-pandas)
+
+You get the idea.  Put em in the `notebooks` directory.
+
