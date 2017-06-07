@@ -32,8 +32,12 @@ ENV TINI_VERSION v0.14.0
 ADD https://github.com/krallin/tini/releases/download/\${TINI_VERSION}/tini /tini
 RUN chmod +x /tini
 
-RUN mkdir /opt/notebooks \
- && /opt/conda/bin/conda install jupyter -y --quiet
+RUN apt-get update \
+ && apt-get install -y graphviz \
+ && mkdir /opt/notebooks \
+ && /opt/conda/bin/conda install jupyter -y --quiet \
+ && pip install graphviz \
+ && echo Done
 
 COPY . /
 
