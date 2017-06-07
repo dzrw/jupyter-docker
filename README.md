@@ -47,7 +47,7 @@ If you've followed the first tip ("fork this repo"), then you should be able to 
 
 ## Getting your local data sets in and out of this container
 
-When you run `make`, the `inputs` and `outputs` directories will be mounted inside the container at `/data/inputs` and `/data/outputs`, respectively.  Use these directories to import and export data to and from the container.
+When you run `make`, the `notebooks` directory will be mounted inside the container at `/opt/notebooks`.  Use this path to import and export data to and from the container.  My convention is to create a directory for each notebook containing `inputs` and `outputs` subfolders.  That might work for you.
 
 If you've followed the first tip ("fork this repo"), then you should be able to commit your datasets directly to version control after stopping the server.
 
