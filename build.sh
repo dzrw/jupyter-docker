@@ -37,6 +37,7 @@ RUN apt-get update \
  && mkdir /opt/notebooks \
  && /opt/conda/bin/conda install jupyter -y --quiet \
  && pip install graphviz \
+ && pip install plotly \
  && echo Done
 
 COPY . /
